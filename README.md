@@ -8,8 +8,9 @@
 5. If your frames reach the server it will send ACK signal to client
 6. Stop the Program
 ## PROGRAM
+
+Server.py:
 ```
-Server.py
 import socket
 s = socket.socket()
 s.bind(('localhost', 9999))
@@ -29,8 +30,9 @@ while True:
 
 conn.close()  
 s.close()
-
-Client.py
+```
+Client.py:
+```
 import socket
 c = socket.socket()
 c.connect(('localhost', 9999))
